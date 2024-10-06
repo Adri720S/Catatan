@@ -153,7 +153,7 @@
       "metadata": {
         "id": "MVhfEGEDn_eG"
       },
-      "execution_count": Null,
+      "execution_count": None,
       "outputs": []
     }
   ]
