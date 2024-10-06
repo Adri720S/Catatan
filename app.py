@@ -4,8 +4,8 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyMztWGTB0b5V5NP0R6N6ZJJ",
-      "include_colab_link": True
+      "authorship_tag": "ABX9TyMcB3afHTgSqdHTTFR80+z2",
+      "include_colab_link": true
     },
     "kernelspec": {
       "name": "python3",
@@ -114,51 +114,35 @@
       "cell_type": "code",
       "source": [
         "import streamlit as st\n",
+        "import matplotlib.pyplot as plt\n",
+        "import numpy as np\n",
         "\n",
-        "st.title('Belajar Analisis Data')\n",
-        "tab1, tab2, tab3 = st.tabs([\"Tab 1\", \"Tab 2\", \"Tab 3\"])\n",
+        "with st.container():\n",
+        "    st.write(\"Inside the container\")\n",
         "\n",
-        "with tab1:\n",
-        "    st.header(\"Tab 1\")\n",
-        "    st.image(\"https://static.streamlit.io/examples/cat.jpg\")\n",
+        "    x = np.random.normal(15, 5, 250)\n",
         "\n",
-        "with tab2:\n",
-        "    st.header(\"Tab 2\")\n",
-        "    st.image(\"https://static.streamlit.io/examples/dog.jpg\")\n",
-        "\n",
-        "with tab3:\n",
-        "    st.header(\"Tab 3\")\n",
-        "    st.write(\"Ini adalah tab kosong.\")"
+        "    fig, ax = plt.subplots()\n",
+        "    ax.hist(x=x, bins=15)"
       ],
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
         "id": "XPmarQBHnh2c",
-        "outputId": "f804802e-23ec-46f8-fc77-4d66886672ee"
+        "outputId": "68bf4a1a-5425-4871-cbc2-7bb9d92308a8"
       },
-      "execution_count": 12,
+      "execution_count": 13,
       "outputs": [
         {
           "output_type": "stream",
           "name": "stderr",
           "text": [
-            "2024-10-06 06:59:07.464 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-            "2024-10-06 06:59:07.472 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-            "2024-10-06 06:59:07.475 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-            "2024-10-06 06:59:07.480 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-            "2024-10-06 06:59:07.483 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-            "2024-10-06 06:59:07.485 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-            "2024-10-06 06:59:07.487 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-            "2024-10-06 06:59:07.489 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-            "2024-10-06 06:59:07.490 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-            "2024-10-06 06:59:07.492 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-            "2024-10-06 06:59:07.494 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-            "2024-10-06 06:59:07.498 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-            "2024-10-06 06:59:07.504 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-            "2024-10-06 06:59:07.506 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-            "2024-10-06 06:59:07.508 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-            "2024-10-06 06:59:07.509 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n"
+            "2024-10-06 07:23:54.496 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+            "2024-10-06 07:23:54.499 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+            "2024-10-06 07:23:54.500 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+            "2024-10-06 07:23:54.502 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+            "2024-10-06 07:23:54.505 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n"
           ]
         }
       ]
@@ -169,7 +153,7 @@
       "metadata": {
         "id": "MVhfEGEDn_eG"
       },
-      "execution_count": None,
+      "execution_count": null,
       "outputs": []
     }
   ]
