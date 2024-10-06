@@ -5,7 +5,7 @@
     "colab": {
       "provenance": [],
       "authorship_tag": "ABX9TyMztWGTB0b5V5NP0R6N6ZJJ",
-      "include_colab_link": true
+      "include_colab_link": True
     },
     "kernelspec": {
       "name": "python3",
@@ -169,7 +169,7 @@
       "metadata": {
         "id": "MVhfEGEDn_eG"
       },
-      "execution_count": null,
+      "execution_count": None,
       "outputs": []
     }
   ]
