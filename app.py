@@ -4,8 +4,8 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyOm1F/zkZ4e68EbLq5TyNhH",
-      "include_colab_link": True
+      "authorship_tag": "ABX9TyMztWGTB0b5V5NP0R6N6ZJJ",
+      "include_colab_link": true
     },
     "kernelspec": {
       "name": "python3",
@@ -124,7 +124,11 @@
         "\n",
         "with tab2:\n",
         "    st.header(\"Tab 2\")\n",
-        "    st.image(\"https://static.streamlit.io/examples/dog.jpg\")"
+        "    st.image(\"https://static.streamlit.io/examples/dog.jpg\")\n",
+        "\n",
+        "with tab3:\n",
+        "    st.header(\"Tab 3\")\n",
+        "    st.write(\"Ini adalah tab kosong.\")"
       ],
       "metadata": {
         "colab": {
@@ -165,7 +169,7 @@
       "metadata": {
         "id": "MVhfEGEDn_eG"
       },
-      "execution_count": None,
+      "execution_count": null,
       "outputs": []
     }
   ]
